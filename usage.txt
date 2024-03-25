@@ -1,0 +1,15 @@
+1. run inference/transnetv2.py to get transition prediction
+example usage:
+# video/WVU_BUFF_test.mp4 is location of video you want to process
+# --weights is for location of model
+# --visualize is optional flag to create image visualization
+python video/WVU_BUFF_test.mp4 --weights inference/transnetv2-weights --visualize
+
+Running this will output:
+1. scenes.txt: contains prediction start and end frame numbers for distinct scenes
+2. predictions.txt: contains probability of transition between each frame
+3. vis.png: visualizations the transitions
+
+
+2. run get_scenes.py to get video with scene numbers added
+make sure to change the input and output paths accordingly
