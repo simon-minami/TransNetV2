@@ -3,7 +3,7 @@ example usage:
 # video/WVU_BUFF_test.mp4 is location of video you want to process
 # --weights is for location of model
 # --visualize is optional flag to create image visualization
-python video/WVU_BUFF_test.mp4 --weights inference/transnetv2-weights --visualize
+python transnetv2.py video/WVU_BUFF_test.mp4 --weights inference/transnetv2-weights --visualize
 
 Running this will output:
 1. scenes.txt: contains prediction start and end frame numbers for distinct scenes
